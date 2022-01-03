@@ -29,9 +29,9 @@ class GetTextCommand extends Command
         $this->setDescription('Get text from pdf-file.');
 
         $this->addArgument(self::ARGUMENT_NAME_FILENAME, InputArgument::REQUIRED, 'Pdf file name');
-        $this->addArgument(self::ARGUMENT_NAME_PAGES, InputArgument::OPTIONAL, 'Page number', 'all');
+        $this->addArgument(self::ARGUMENT_NAME_PAGES, InputArgument::OPTIONAL, 'Comma separated page numbers', 'all');
 
-        $this->addOption(self::OUTPUT_FILE_OPTION_NAME, 'o', InputOption::VALUE_REQUIRED, 'Output filename');
+        $this->addOption(self::OUTPUT_FILE_OPTION_NAME, 'o', InputOption::VALUE_REQUIRED, 'Output filename. By default just print text to console.');
     }
 
 
