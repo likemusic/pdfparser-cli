@@ -1,0 +1,24 @@
+{
+    "name": "likemusic/pdfparser-cli",
+    "description": "CLI wrapper for [smalot/pdfparser](https://github.com/smalot/pdfparser)",
+    "keywords": ["pdf", "parser", "parse",  "php", "console", "command", "extract", "extractor", "text"],
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Valerij Ivashchenko",
+            "email": "likemusicdev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "symfony/console": "^4.4",
+        "smalot/pdfparser": "^2.0"
+    },
+    "bin": ["src/phpparser-cli.php"],
+    "autoload": {
+        "psr-4": {
+            "Likemusic\\PhpParser\\CLI\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  phpparser-cli:
+    build:
+      context: ./docker/php-cli
+    working_dir: /root/phpparser-cli
+    volumes:
+      - ./:/root/phpparser-cli
+    environment:
+      XDEBUG_CONFIG: "remote_enable=${XDEBUG_REMOTE_ENABLE} remote_host=${XDEBUG_REMOTE_HOST} idekey=${XDEBUG_IDE_KEY}"
+#      XDEBUG_SESSION: ${XDEBUG_SESSION}
+      PHP_IDE_CONFIG: serverName=${PHP_IDE_CONFIG_SERVER_NAME}
+
