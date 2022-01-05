@@ -13,12 +13,18 @@
     "require": {
         "php": ">=7.1",
         "symfony/console": "^4.4",
-        "smalot/pdfparser": "^2.0"
+        "smalot/pdfparser": "dev-fix-encoding"
     },
     "bin": ["src/phpparser-cli.php"],
     "autoload": {
         "psr-4": {
             "Likemusic\\PhpParser\\CLI\\": "src/"
+        }
+    },
+    "repositories": {
+        "pdfparser": {
+            "type": "vcs",
+            "url": "https://github.com/likemusic/pdfparser.git"
         }
     }
 }
