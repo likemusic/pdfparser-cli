@@ -15,7 +15,7 @@
         "symfony/console": "^4.4",
         "smalot/pdfparser": "^2.0"
     },
-    "bin": ["src/phpparser-cli.php"],
+    "bin": ["src/pdfparser-cli.php"],
     "autoload": {
         "psr-4": {
             "Likemusic\\PhpParser\\CLI\\": "src/"
